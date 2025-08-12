@@ -1,5 +1,6 @@
 document.addEventListener("DOMContentLoaded", () => {
-    fetch("data/projects.json")
+    // Load project data from the correct location
+    fetch("projects.json")
         .then(res => res.json())
         .then(projects => {
             const projectList = document.getElementById("projectList");
