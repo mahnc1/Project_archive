@@ -81,10 +81,7 @@ menuToggle.addEventListener('click', () => {
 homeLink.addEventListener('click', e => {
   e.preventDefault();
   loadWelcome();
-  if (activeLink) {
-    activeLink.classList.remove('active');
-    activeLink = null;
-  }
+  highlightActive(homeLink);
   closeSidebarOnMobile();
 });
 
@@ -96,4 +93,5 @@ function closeSidebarOnMobile() {
 
 window.addEventListener('load', () => {
   loadWelcome();
+  highlightActive(homeLink);
 });
