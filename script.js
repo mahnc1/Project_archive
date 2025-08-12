@@ -2,7 +2,6 @@ const projectList = document.getElementById('projectList');
 const content = document.getElementById('content');
 const sidebar = document.getElementById('sidebar');
 const menuToggle = document.getElementById('menuToggle');
-const homeLink = document.getElementById('homeLink');
 
 let projectsData = [];
 let activeLink = null;  // No active project initially
@@ -78,12 +77,6 @@ menuToggle.addEventListener('click', () => {
   sidebar.classList.toggle('open');
 });
 
-homeLink.addEventListener('click', e => {
-  e.preventDefault();
-  loadWelcome();
-  highlightActive(homeLink);
-  closeSidebarOnMobile();
-});
 
 function closeSidebarOnMobile() {
   if (window.innerWidth <= 768) {
@@ -92,6 +85,5 @@ function closeSidebarOnMobile() {
 }
 
 window.addEventListener('load', () => {
-  loadWelcome();
-  highlightActive(homeLink);
-});
+    loadWelcome();
+  });
