@@ -24,8 +24,8 @@ function loadWelcome() {
   content.focus();
 }
 
-// Fetch projects.json and create sidebar links
-fetch('projects.json')
+// Fetch project.json and create sidebar links
+fetch('project.json')
   .then(response => response.json())
   .then(data => {
     projectsData = data;
