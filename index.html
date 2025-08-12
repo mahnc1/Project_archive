@@ -1,37 +1,26 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Project Archive</title>
-  <link rel="stylesheet" href="style.css" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Archive</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script defer src="js/main.js"></script>
 </head>
 <body>
+    <!-- Floating Navigation -->
+    <nav class="floating-nav">
+        <div class="site-title">MY ARCHIVE</div>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li class="dropdown">
+                <a href="#">Projects ▾</a>
+                <ul class="dropdown-menu" id="projectList"></ul>
+            </li>
+        </ul>
+    </nav>
 
-  <!-- Hamburger menu button (mobile) -->
-  <button id="menuToggle" aria-label="Toggle menu">☰ Projects</button>
-
-  <!-- Sidebar Navigation -->
-  <nav id="sidebar" aria-label="Project Navigation">
-    <h2><a href="#" id="homeButton">Home</a></h2>
-    <h2>Projects</h2>
-    <ul id="projectList">
-      <!-- Project links appended here by JS -->
-    </ul>
-    <footer class="nav-footer">
-      <p>Contact: <a href="mailto:contact@example.com">contact@example.com</a> | Phone: (123) 456-7890</p>
-    </footer>
-  </nav>
-
-  <!-- Main Content -->
-  <main id="content" tabindex="0">
-    <h1>Welcome to My Project Archive</h1>
-    <p>Select a project from the left to see details.</p>
-    <footer id="footer">
-      <p>Contact: <a href="mailto:contact@example.com">contact@example.com</a> | Phone: (123) 456-7890</p>
-    </footer>
-  </main>
-
-  <script src="script.js"></script>
+    <!-- Main Content -->
+    <main class="grid-container" id="homeGrid"></main>
 </body>
 </html>
