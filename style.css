@@ -22,6 +22,11 @@ body {
     margin-bottom: 10px;
 }
 
+#homeButton {
+    text-decoration: none;
+    color: inherit;
+}
+
 
 #sidebar ul {
     list-style: none;
@@ -51,6 +56,23 @@ body {
 #sidebar ul li a.active {
     background-color: #007bff;
     color: white;
+}
+
+.nav-footer {
+    margin-top: 20px;
+    padding-top: 10px;
+    border-top: 1px solid #ddd;
+    color: #333;
+    font-size: 0.9rem;
+}
+
+.nav-footer a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+.nav-footer a:hover {
+    text-decoration: underline;
 }
 
 #content {
