@@ -22,25 +22,6 @@ body {
     margin-bottom: 10px;
 }
 
-#sidebar h2 a {
-    text-decoration: none;
-    color: #333;
-    font-size: 1rem;
-    display: block;
-    padding: 6px 10px;
-    border-radius: 4px;
-    transition: background-color 0.2s ease;
-}
-
-#sidebar h2 a:hover {
-    background-color: #e6f0ff;
-    color: #007bff;
-}
-
-#sidebar h2 a.active {
-    background-color: #007bff;
-    color: white;
-}
 
 #sidebar ul {
     list-style: none;
