@@ -2,6 +2,7 @@ const projectList = document.getElementById('projectList');
 const content = document.getElementById('content');
 const sidebar = document.getElementById('sidebar');
 const menuToggle = document.getElementById('menuToggle');
+const homeLink = document.getElementById('homeLink');
 
 let projectsData = [];
 let activeLink = null;  // No active project initially
@@ -75,6 +76,16 @@ function loadProject(project) {
 // Mobile menu toggle
 menuToggle.addEventListener('click', () => {
   sidebar.classList.toggle('open');
+});
+
+homeLink.addEventListener('click', e => {
+  e.preventDefault();
+  loadWelcome();
+  if (activeLink) {
+    activeLink.classList.remove('active');
+    activeLink = null;
+  }
+  closeSidebarOnMobile();
 });
 
 function closeSidebarOnMobile() {

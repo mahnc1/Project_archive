@@ -22,6 +22,11 @@ body {
     margin-bottom: 10px;
 }
 
+#sidebar h2 a {
+    text-decoration: none;
+    color: inherit;
+}
+
 #sidebar ul {
     list-style: none;
     padding: 0;
